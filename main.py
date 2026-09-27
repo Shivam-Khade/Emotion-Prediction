@@ -1,3 +1,6 @@
+import os
+os.environ["CUDA_VISIBLE_DEVICES"] = "-1"
+
 from keras.utils import pad_sequences
 from fastapi.staticfiles import StaticFiles
 from fastapi import FastAPI, HTTPException
